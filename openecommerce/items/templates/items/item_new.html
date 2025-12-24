@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<form action="{% url 'items:new-item' %}" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+{{ form }}
+ <button>Create post</button>
+</form>
+{% endblock %}

@@ -1,4 +1,9 @@
 {% extends 'layout.html' %}
 {% block content %}
 <h2>Items</h2>
+<ol>
+{% for item in items %}
+<li><a href="{% url 'items:page' item.pk %}">{{ item.name }} </a></li>
+{% endfor %}
+</ol>
 {% endblock %}
