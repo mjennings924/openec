@@ -29,11 +29,7 @@ header {
 input, textarea {
     display: block;
 }
-.container-session {
-    display:grid;
-    place-items: center;
-    height:80vh;
-}
+
 .navbar-end {
     display: flex;
     align-items: center;
