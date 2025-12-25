@@ -1,2 +1,15 @@
-{{ item.name }}
-{{ item.description }}
+{% extends 'layout.html' %}
+
+{% load static %}
+{% block content %}
+<div class="layout">
+    <div class="layout-main">
+<h2>{{ item.name }}</h2>
+<img src="{{ item.image.url }}" />
+<p>{{ item.description }}</p>
+    </div>
+    <div class="layout-sidebar">
+        <button>Buy now</button>
+    </div>
+</div>
+{% endblock %}

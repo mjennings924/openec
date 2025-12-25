@@ -29,10 +29,30 @@ header {
 input, textarea {
     display: block;
 }
-
 .navbar-end {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex: 1 1 auto;
+}
+.item-block {
+    background-color: #fffbac;
+    width:100%;
+
+    a {
+        color:black!important;
+        text-decoration: none;
+    }
+}
+.layout {
+    display: flex;
+    flex-direction: row;
+    margin:25px;
+}
+.layout-main {
+    flex: 3;
+}
+.layout-sidebar {
+    flex: 1;
+    margin-left:24px;
 }

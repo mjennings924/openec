@@ -1,9 +1,11 @@
 {% extends 'layout.html' %}
 {% block content %}
 <h2>Items</h2>
+<div class="item-block">
 <ol>
 {% for item in items %}
-<li><a href="{% url 'items:page' item.pk %}">{{ item.name }} </a></li>
+<li><a href="{% url 'items:page' item.pk %}">{{ item.name }} </a> [added by {{item.author}}]</li>
 {% endfor %}
 </ol>
 {% endblock %}
+</div>
